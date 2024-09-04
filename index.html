@@ -20,15 +20,24 @@
             <ul class="menu" id="menu">
                 <li><a href="#" class="link-menu">Home</a></li>
                 <li><a href="./src/pages/suporte.html" class="link-menu">Suporte</a></li>
-                <li><img  src="./src/img/shopping-cart.png" alt=""></li>
+                <li><img id="icone-carrinho" src="./src/img/shopping-cart.png" alt=""></li>
             </ul>
         </nav>
+        
     </header>
 
     <main>
+        <div class="carrinho" id="carrinho">
+            <h2>Carrinho</h2>
+            <div class="produtos">
+                <ul id="lista-produtos">
+                    <!-- Produtos adicionados aparecem aqui -->
+                </ul>
+            </div>
+        </div>
         <div class="container-top">
-            <h2>Produtos</h2>
-            <button onclick="">Filtrar</button>
+            <h1>Produtos</h1>
+            <button onclick="filtrarProdutos()">Filtrar</button>
         </div>
 
         <div class="container-main">
@@ -36,103 +45,101 @@
                 <img src="" alt="">
                 <p class="texto-produto">Camiseta Azul Marinho</p>
                 <p class="texto-preco">R$129,00</p>
-                <button>Comprar</button>
+                <button onclick="adicionar('Camiseta Azul Marinho', 129.00)" type="button" class="btn-comprar">Comprar</button>
 
             </div>
             <div id="produtos" class="container-produtos">
                 <img src="" alt="">
                 <p class="texto-produto">Camiseta Branca</p>
                 <p class="texto-preco">R$129,00</p>
-                <button>Comprar</button>
+                <button onclick="adicionar('Camiseta Branca', 129.00)" type="button" class="btn-comprar">Comprar</button>
 
             </div>
             <div id="produtos" class="container-produtos">
                 <img src="" alt="">
                 <p class="texto-produto">Legging Preto</p>
                 <p class="texto-preco">R$279,00</p>
-                <button>Comprar</button>
+                <button onclick="adicionar('Legging Preto', 279.00)" type="button" class="btn-comprar">Comprar</button>
 
             </div>
             <div id="produtos" class="container-produtos">
                 <img src="" alt="">
                 <p class="texto-produto">Legging Floral</p>
                 <p class="texto-preco">R$279,00</p>
-                <button>Comprar</button>
+                <button onclick="adicionar('Legging Floral', 279.00)" type="button" class="btn-comprar">Comprar</button>
 
             </div>
             <div id="produtos" class="container-produtos">
                 <img src="" alt="">
                 <p class="texto-produto">Brinco Mirtis Pink</p>
                 <p class="texto-preco">R$89,00</p>
-                <button>Comprar</button>
+                <button onclick="adicionar('Brinco Mirtis Pink', 89.00)" type="button" class="btn-comprar">Comprar</button>
 
             </div>
             <div id="produtos" class="container-produtos">
                 <img src="" alt="">
                 <p class="texto-produto">Brinco Celestine</p>
                 <p class="texto-preco">R$49,00</p>
-                <button>Comprar</button>
+                <button onclick="adicionar('Brinco Celestine', 49.00)" type="button" class="btn-comprar">Comprar</button>
 
             </div>
             <div id="produtos" class="container-produtos">
                 <img src="" alt="">
                 <p class="texto-produto">Multistick Rosa</p>
                 <p class="texto-preco">R$99,90</p>
-                <button>Comprar</button>
+                <button onclick="adicionar('Multistick Rosa', 99.90)" type="button" class="btn-comprar">Comprar</button>
 
             </div>
             <div id="produtos" class="container-produtos">
                 <img src="" alt="">
                 <p class="texto-produto">Hidratante Primer</p>
                 <p class="texto-preco">R$99,90</p>
-                <button>Comprar</button>
+                <button onclick="adicionar('Hidratante Primer', 99.90)" type="button" class="btn-comprar">Comprar</button>
 
             </div>
             <div id="produtos" class="container-produtos">
                 <img src="" alt="">
                 <p class="texto-produto">Desodorante</p>
                 <p class="texto-preco">R$70,00</p>
-                <button>Comprar</button>
+                <button onclick="adicionar('Desodorante', 70.00)" type="button" class="btn-comprar">Comprar</button>
 
             </div>
             <div id="produtos" class="container-produtos">
                 <img src="" alt="">
                 <p class="texto-produto">Sabonete Íntimo</p>
                 <p class="texto-preco">R$33,00</p>
-                <button>Comprar</button>
+                <button onclick="adicionar('Sabonete Íntimo', 33.00)" type="button" class="btn-comprar">Comprar</button>
 
             </div>
             <div id="produtos" class="container-produtos">
                 <img src="" alt="">
                 <p class="texto-produto">Estante Redonda</p>
                 <p class="texto-preco">R$807,50</p>
-                <button>Comprar</button>
+                <button onclick="adicionar('Estante Redonda', 807.50)" type="button" class="btn-comprar">Comprar</button>
 
             </div>
             <div id="produtos" class="container-produtos">
                 <img src="" alt="">
                 <p class="texto-produto">Cesto de Palha</p>
                 <p class="texto-preco">R$119,90</p>
-                <button>Comprar</button>
+                <button onclick="adicionar('Cesto de Palha', 119.90)" type="button" class="btn-comprar">Comprar</button>
 
             </div>
             <div id="produtos" class="container-produtos">
                 <img src="" alt="">
                 <p class="texto-produto">Escova de Bambu</p>
                 <p class="texto-preco">R$21,00</p>
-                <button>Comprar</button>
+                <button onclick="adicionar('Escova de Bambu', 21.00)" type="button" class="btn-comprar">Comprar</button>
 
             </div>
             <div id="produtos" class="container-produtos">
                 <img src="" alt="">
                 <p class="texto-produto">Ecobag</p>
                 <p class="texto-preco">R$119,90</p>
-                <button>Comprar</button>
-
+                <button onclick="adicionar('Ecobag', 119.90)" type="button" class="btn-comprar">Comprar</button>
             </div>
             
         </div>
-
 
     </main>
 

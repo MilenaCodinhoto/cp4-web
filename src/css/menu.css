@@ -8,6 +8,37 @@ header {
     background-color: var(--color2-light-green);
 }
 
+.carrinho {
+    position: absolute;
+    background-color: #fdfdfd;
+    z-index: 1;
+    left: 400px;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 1px 10px rgba(0,0,0,0.3);
+    transition: visibility 0.3s, opacity 0.3s ease-in-out; /* Adiciona uma transição */
+    opacity: 0; /* Inicia invisível */
+    
+}
+
+.carrinho.aberto {
+    visibility: visible; /* Exibe o carrinho */
+    opacity: 1; /* Faz o carrinho aparecer */
+}
+.carrinho h2 {
+    text-align: left;
+    padding: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+}
+.carrinho .produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: rgb(161, 161, 161);
+    font-weight: bold;
+
+}
 .menuToggle {
     display: none;
     position: absolute;
