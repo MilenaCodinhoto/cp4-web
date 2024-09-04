@@ -1,5 +1,5 @@
 {
-    "Roupas": [
+    "roupas": [
         {
             "nome": "Camiseta Azul Marinho",
             "preço": 129.00
@@ -18,7 +18,7 @@
         }
     ],
 
-    "Acessórios": [
+    "acessorios": [
         {
             "nome": "Brinco Mirtis Pink",
             "preço": 89.00
@@ -29,7 +29,7 @@
         }
     ],
 
-    "Beleza": [
+    "beleza": [
         {
             "nome": "Multistick Rosa",
             "preço": 99.90
@@ -40,7 +40,7 @@
         }
     ],
 
-    "Cuidados Pessoais": [
+    "cuidados-pessoais": [
         {
             "nome": "Desodorante",
             "preço": 70.00
@@ -51,7 +51,7 @@
         }
     ],
 
-    "Itens de casa": [
+    "itens-de-casa": [
         {
             "nome": "Estante Redonda",
             "preço": 807.50
@@ -62,7 +62,7 @@
         }
     ],
 
-    "Tech Verde": [
+    "tech-verde": [
         {
             "nome": "Escova de Bambu",
             "preço": 21.00
