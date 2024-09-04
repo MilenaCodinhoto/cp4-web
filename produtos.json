@@ -1,0 +1,76 @@
+{
+    "Roupas": [
+        {
+            "nome": "Camiseta Azul Marinho",
+            "preço": 129.00
+        },
+        {
+            "nome": "Camiseta Branca",
+            "preço": 129.00
+        },
+        {
+            "nome": "Legging Preto",
+            "preço": 279.00
+        },
+        {
+            "nome": "Legging Floral",
+            "preço": 279.00
+        }
+    ],
+
+    "Acessórios": [
+        {
+            "nome": "Brinco Mirtis Pink",
+            "preço": 89.00
+        },
+        {
+            "nome": "Brinco Celestine",
+            "preço": 49.00
+        }
+    ],
+
+    "Beleza": [
+        {
+            "nome": "Multistick Rosa",
+            "preço": 99.90
+        },
+        {
+            "nome": "Hidratante Primer",
+            "preço": 99.90
+        }
+    ],
+
+    "Cuidados Pessoais": [
+        {
+            "nome": "Desodorante",
+            "preço": 70.00
+        },
+        {
+            "nome": "Sabonete Íntimo",
+            "preço": 33.00
+        }
+    ],
+
+    "Itens de casa": [
+        {
+            "nome": "Estante Redonda",
+            "preço": 807.50
+        },
+        {
+            "nome": "Cesto de Palha",
+            "preço": 119.90
+        }
+    ],
+
+    "Tech Verde": [
+        {
+            "nome": "Escova de Bambu",
+            "preço": 21.00
+        },
+        {
+            "nome": "Ecobag",
+            "preço": 119.90
+        }
+    ]
+
+}
