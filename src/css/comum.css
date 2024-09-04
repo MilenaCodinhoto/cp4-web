@@ -8,10 +8,10 @@
 /***** Reset + Configs *****/
 
 :root {
-    --color1-dark-green: #00343c;
-    --color2-light-green: #428e8d;
-    --color3-cyan: #00fefb;
+    --color1: #25330F;
+    --color2-light-green: #D4C9B5;
     --white-default: #fff;
+    --color4: #000000;
 }
 
 ul,
@@ -28,6 +28,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     width: 100vw;
+    background-color: var(--color1);
 }
 
 /***** Foooter *****/
@@ -39,7 +40,7 @@ footer {
     padding: 0px 120px;
     width: 100vw;
     height: 10vh;
-    background-color: var(--color2-light-green);
+    background-color: var(--color4);
 }
 
 .contt-email {
