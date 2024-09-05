@@ -7,16 +7,15 @@ function adicionar(nomeProduto, valorProduto) {
     let carrinho = document.getElementById('lista-produtos');
     carrinho.innerHTML += `
         <div class="produto">
-            <img src="./src/img/produto-generico.jpg" alt="img-produto">
             <div>
                 <h2>${nomeProduto}</h2>
                 <span>R$${valorProduto}</span>
             </div>
-            <img src="./src/img/lixo.png" alt="lixo">
+            <img class="lixo" onclick="limpar(this)" src="./src/img/lixo.png" alt="lixo">
         </div>`;
 }
 
-function filtrarProdutos(){
-
+function limpar(elemento) {
+    // Remove o elemento pai (o produto) do DOM
+    elemento.parentElement.remove();
 }
-    // Lógica para filtrar produtos (a implementar)

@@ -40,6 +40,9 @@ header {
 
 }
 
+.lixo {
+    width: 30px;
+}
 .container-top h1{
     font-family: "Poppins", sans-serif;
     font-size: 25px;
