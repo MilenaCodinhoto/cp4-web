@@ -77,3 +77,57 @@ document.getElementById('filtrar-categoria').addEventListener('change', function
     });
 });
 
+// Função para simular o pagamento
+function finalizarCompra() {
+    let produtos = JSON.parse(localStorage.getItem('carrinho')) || [];
+    
+    if (produtos.length === 0) {
+        alert("O carrinho está vazio!");
+        return;
+    }
+    
+    // Simula a validação do pagamento
+    let pagamentoAprovado = simularPagamento();
+    
+    if (pagamentoAprovado) {
+        // Se o pagamento for aprovado, salva o status no localStorage
+        localStorage.setItem('statusPagamento', 'aprovado');
+        alert("Pagamento aprovado! Obrigado pela compra.");
+        
+        // Limpa o carrinho
+        localStorage.removeItem('carrinho');
+        carregarCarrinho();
+    } else {
+        // Se o pagamento for recusado
+        localStorage.setItem('statusPagamento', 'recusado');
+        alert("Pagamento recusado. Tente novamente.");
+    }
+}
+
+// Função que simula a validação de pagamento (pode ser substituída por uma API real)
+function simularPagamento() {
+    // Simulação: 80% de chance de aprovação
+    return Math.random() < 0.8;
+}
+
+// Função para verificar o status de pagamento ao carregar a página
+function verificarStatusPagamento() {
+    let status = localStorage.getItem('statusPagamento');
+    
+    if (status === 'aprovado') {
+        alert("Seu pagamento foi aprovado! Aproveite seus produtos.");
+    } else if (status === 'recusado') {
+        alert("Seu pagamento foi recusado. Por favor, tente novamente.");
+    }
+}
+
+// Chama a função de verificação ao carregar a página
+window.onload = function() {
+    carregarCarrinho();
+    verificarStatusPagamento();
+};
+
+// Adiciona o evento de clique ao botão de finalizar compra
+document.querySelector('.btn-finalizar').addEventListener('click', finalizarCompra);
+
+
