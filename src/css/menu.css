@@ -42,7 +42,8 @@ header {
 
 .container-top h1{
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    text-align: center;
     margin: 25px;
     color: #D4C9B5;
 }
@@ -135,16 +136,15 @@ header {
     padding: 15px;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    flex: 1 1 30%; /* Cada produto ocupa aproximadamente 30% da largura da tela */
+    width: 300px; 
     margin: 10px;
-    max-width: 300px; /* Limita o tamanho máximo do produto */
+    box-sizing: border-box; 
 }
 
 .container-produtos img {
     width: 100%;
-    height: auto;
+    height: 200px;
     max-width: 200px;
     margin-bottom: 10px;
 }
