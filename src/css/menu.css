@@ -39,6 +39,29 @@ header {
     font-weight: bold;
 
 }
+
+.container-top h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin: 25px;
+    color: #D4C9B5;
+}
+
+.container-top button{
+    padding: 10px 20px;
+    margin: 10px 25px;
+    background-color: #bfa14f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.container-top button:hover {
+    background-color: #D4C9B5;
+}
+
 .menuToggle {
     display: none;
     position: absolute;
@@ -99,6 +122,59 @@ header {
     font-size: 1.5rem;
     font-weight: 500;
 }
+
+/* Flexbox layout para os produtos */
+.container-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-produtos {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    flex: 1 1 30%; /* Cada produto ocupa aproximadamente 30% da largura da tela */
+    margin: 10px;
+    max-width: 300px; /* Limita o tamanho máximo do produto */
+}
+
+.container-produtos img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.texto-produto {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.texto-preco {
+    font-size: 14px;
+    color: #bfa14f;
+    margin-bottom: 10px;
+}
+
+.btn-comprar {
+    background-color: #751102;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-comprar:hover {
+    background-color: #B78C57;
+}
+
 
 @media (max-width: 1080px) {
     header img {
