@@ -55,3 +55,25 @@ function limpar(elemento, nomeProduto) {
 window.onload = function() {
     carregarCarrinho();
 };
+
+// ////////////////////////
+document.getElementById('filtrar-categoria').addEventListener('change', function() {
+    const categoriaSelecionada = this.value;
+    const produtos = document.querySelectorAll('.container-produtos');
+
+    produtos.forEach(function(produto) {
+        const categoriaProduto = produto.getAttribute('data-categoria');
+
+        // Se a categoria for "todos", mostrar todos os produtos
+        if (categoriaSelecionada === 'todos') {
+            produto.classList.remove('ocultar');
+        } 
+        // Se for uma categoria específica, mostrar apenas os produtos dessa categoria
+        else if (categoriaSelecionada === categoriaProduto) {
+            produto.classList.remove('ocultar'); // Mostra produtos da categoria selecionada
+        } else {
+            produto.classList.add('ocultar'); // Oculta produtos de outras categorias
+        }
+    });
+});
+

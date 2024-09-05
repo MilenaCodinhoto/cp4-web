@@ -53,6 +53,7 @@ header {
     cursor: pointer;
 }
 
+
 #lista-produtos {
     list-style: none;
     padding: 0;
@@ -167,11 +168,51 @@ header {
     font-weight: 500;
 }
 
+/* Categoria*/
+.container-categoria {
+    background-color: var(--white-default); 
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+    margin: 15px 20px; 
+    max-width: 250px; 
+}
+
+.categoria-texto {
+    font-size: 14px; 
+    font-weight: bold; 
+    color: var(--color1); 
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.formulario {
+    width: 100%; 
+    padding: 10px 10px;
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    background-color: #fff; 
+    font-size: 14px; 
+    color: #333; 
+    cursor: pointer; 
+    transition: border-color 0.2s; 
+}
+
+.formulario:focus {
+    border-color: var(--color1);
+    outline: none; 
+}
+
+.formulario option {
+    padding: 8px; 
+    font-size: 14px; 
+}
+
 /* Flexbox layout para os produtos */
 .container-main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .container-produtos {
@@ -180,9 +221,13 @@ header {
     text-align: center;
     border-radius: 5px;
     margin-bottom: 20px;
-    width: 300px; 
+    width: 300px;
     margin: 10px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+.ocultar {
+    display: none;
 }
 
 .container-produtos img {
@@ -238,15 +283,15 @@ header {
 
 @media (max-width: 600px) {
     .carrinho {
-        width: 90%; /* Largura ajustada para telas menores */
-        right: 5%; /* Ajuste da posição para dar um pouco de margem */
-        top: auto; /* Remove o posicionamento no topo para telas menores */
-        bottom: 10px; /* Posiciona o carrinho mais abaixo em telas menores */
+        width: 90%; 
+        right: 5%; 
+        top: auto; 
+        bottom: 10px; 
     }
 }
 
 .carrinho.aberto {
-    display: block; /* Exibe o carrinho quando aberto */
+    display: block; 
     opacity: 1;
 }
 
