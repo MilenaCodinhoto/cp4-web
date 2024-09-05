@@ -44,6 +44,15 @@ header {
     flex-direction: column;
 }
 
+.btn-finalizar {
+    background-color: #1d4402;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
 #lista-produtos {
     list-style: none;
     padding: 0;

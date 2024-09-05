@@ -33,12 +33,24 @@
                 <ul id="lista-produtos">
                     <!-- Produtos adicionados aparecem aqui -->
                 </ul>
+                <button class="btn-finalizar" onclick="">Finalizar Compra</button>
             </div>
         </div>
         <div class="container-top">
             <h1>Produtos</h1>
-            <button onclick="filtrarProdutos()">Filtrar</button>
         </div>
+        <div class="container-categoria">
+            <span class="categoria-texto">Categoria</span>
+            <select class="formulario" id="filtrar-categoria">
+                <option value="todos">Todos</option>
+                <option value="roupas">Roupas</option>
+                <option value="acessorios">Acessórios</option>
+                <option value="beleza">Beleza</option>
+                <option value="cuidados-pessoais">Cuidados Pessoais</option>
+                <option value="itens-de-casa">Itens de Casa</option>
+                <option value="tech-verde">Tech Verde</option>
+            </select>
+          </div>
 
         <div class="container-main">
             <div id="produtos"   class="container-produtos">
